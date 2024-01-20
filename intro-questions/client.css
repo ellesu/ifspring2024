@@ -1,0 +1,60 @@
+.hidden{
+    display:none;
+}
+body{
+    text-align:center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(209, 226, 231);
+    font-family: monospace;
+    font-size:14pt;
+    color:rgb(13, 38, 88);
+}
+.roomButton{
+    background-color:rgb(143, 73, 196);
+    box-shadow:none;
+}
+.roomButton:hover{
+    background-color:rgb(70, 22, 92);
+    box-shadow:none;
+}
+button{
+    align-content:center;
+    background-color:rgb(54, 208, 192);
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    box-shadow: 2px 2px 0 0 rgb(35, 105, 48);
+    border-radius: 2px;
+    cursor:pointer;
+  }
+button:hover{
+    align-content:center;
+    background-color:rgb(18, 73, 53);
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    position: relative; left:2px; top:2px;
+    box-shadow: 0 0 0 0;
+    border-radius: 2px;
+    cursor:pointer;
+}
+
+.column {
+    float: left;
+  }
+.left {
+    width: 25%;
+  }
+.right {
+    width: 75%;
+  }

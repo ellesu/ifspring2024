@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: papayawhip;
+    margin:5%;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    color:#00380F;
+    background-color: lightblue;
+}
+li{
+    color: #00380F;
+}
+a{
+    color:green;
+}
