@@ -1,0 +1,79 @@
+body{
+    justify-content: center;
+    font-family: monospace;
+    background-color: black;
+    margin: 5%;
+    margin-left:10%;
+    margin-right:10%;
+    font-size: larger;
+    flex-wrap: wrap;
+}
+h1{
+    justify-content: center;
+    text-align: center;
+    color:antiquewhite;
+    
+}
+table{
+    width: 100%;
+}
+.block{
+    background-color: darkred;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.line{
+    padding-bottom: 5%;
+}
+.dir{
+    font-style: italic;
+    font-weight: lighter;
+    color:antiquewhite;
+}
+.name{
+    font-weight: bolder;
+    color:antiquewhite;
+}
+.quote{
+    background-color: antiquewhite;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 20px;
+}
+.sd{
+    font-style: italic;
+    color:antiquewhite;
+    text-align: center;
+}
+td{
+    padding: 10px;
+    margin: 5px;
+}
+
+/* character stylings */
+.pv{
+    border: 2px solid rgb(245, 245, 163);
+    width: 30%;
+    border-radius: 5px;
+}
+.db{
+    border: 2px solid skyblue;
+    border-radius: 5px;
+}
+.m{
+    border: 2px solid rgb(79, 204, 253);
+    border-radius: 5px;
+}
+.rs{
+    border: 2px solid rgb(255, 174, 103);
+    border-radius: 5px;
+}
+.es{
+    border: 2px solid rgb(255, 103, 242);
+    border-radius: 5px;
+}
+.wz{
+    border: 2px solid rgb(148, 128, 244);
+    border-radius: 5px;
+}
