@@ -1,0 +1,29 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    width:100%;
+    background-color: rgb(198, 233, 234);
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0% 2% 0%;
+}
+.title{
+    width:40%;
+}
+.cred{
+    width:30%
+}
+.button{
+    width:5%;
+}
+.main{
+    justify-content: center;
+    width:50%;
+    background-color: skyblue;
+}
