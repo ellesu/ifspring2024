@@ -1,0 +1,50 @@
+html{
+    font-family: 'Crimson Text', serif;
+    font-size: 24px;
+    margin:5%;
+}
+h2{
+    color:darkgreen;
+    font-size: 1.2rem;
+    margin: 0.4em;
+    margin-top: 2em;
+}
+h3{
+    color:rgb(78, 143, 78);
+    font-weight: normal;
+    margin: 0.4em;
+    font-size: 18px;
+}
+p{
+    margin: 0.4em;
+}
+.bold{
+    font-weight:bold;
+}
+.italic{
+    font-style:italic;
+}
+.ls3{
+    letter-spacing: 0.3em;
+}
+.ls6{
+    letter-spacing: -0.06em;
+}
+.ul{
+    text-decoration: underline;
+}
+.lt{
+    text-decoration: line-through;
+}
+.ol{
+    text-decoration: overline;
+}
+.up{
+    text-transform: uppercase;
+}
+.lo{
+    text-transform: lowercase;
+}
+.cap{
+    text-transform: capitalize;
+}
