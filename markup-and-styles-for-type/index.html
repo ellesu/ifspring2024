@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Markup and Styles for Type</title>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/7bec1be658.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xkm5haf.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Markup and Styles for Type</title>
 </head>
 <body>
     
@@ -19,7 +26,7 @@
 
         In HTML, this is the default behavior for text without any markup. Many html elements are intended to flow with text in this way without interruption. Elements that have this behavior are known as inline elements.
 
-        Common inline elements include a, strong, em, b, i, sup, sub, button, code and span.
+        Common inline elements include <a>a</a>, <strong>strong</strong>, <em>em</em>, <b>b</b>, <i>i</i>, <sup>sup</sup>, <sub>sub</sub>, <button>button</button>, <code>code</code> and <span>span</span>.
 
         <!-- Wrap each element named above in its corresponding tag. -->
 
@@ -27,7 +34,7 @@
 
         Common block elements include:
         
-        p, h1, h2, h3, h4, h5, h6, article, section, nav, aside, header, footer, and div.
+        <p>p</p>, <h1>h1</h1>, <h2>h2</h2>, <h3>h3</h3>, <h4>h4</h4>, <h5>h5</h5>, <h6>h6</h6>, <article>article</article>, <section>section</section>, <nav>nav</nav>, <aside>aside</aside>, <header>header</header>, <footer>footer</footer>, and <div>div</div>.
 
         <!-- Wrap each element named in the line above with its corresponding tag. -->
         <!-- For all other blocks in this section, wrap in a p tag. -->
@@ -40,7 +47,7 @@
 
         Sometimes, you want to put notes or comments into the code itself that are not visible to the end-user. These code comments can also be useful for temporarily 'removing' code from the page without actually deleting it, because code within a comment does not get parsed by the browser.
 
-        Hide this block of text by placing your cursor in it, then typing command-/, which (in VS Code) will add comment delimiters to the entire line.
+        <!-- Hide this block of text by placing your cursor in it, then typing command-/, which (in VS Code) will add comment delimiters to the entire line. -->
 
       </section>
 
@@ -58,7 +65,7 @@
 
         <h1>HTML entities</h1>
 
-        <p>There are some characters that must be handled differently because they are used to create the markup itself. These characters must be 'escaped' in your code with short 'words' called <dfn>HTML Entities</dfn>. These 'words' all begin with an ampersand, and end with a semi-colon. Angle brackets (less-than and greater-than) must be represented with html entities, since they are parsed to create tags themselves.
+        <p>There are some characters that must be handled differently because they are used to create the markup itself. These characters must be 'escaped' in your code with short 'words' called <dfn>HTML Entities</dfn>. These 'words' all begin with an ampersand, and end with a semi-colon. Angle brackets (&lt; and &gt;) must be represented with html entities, since they are parsed to create tags themselves.
 
         <!-- Above, replace 'less-than' with &lt; and 'greater-then' with &gt;. -->
 
@@ -313,7 +320,7 @@ selector {
 
         <h1>Font Awesome (Icon font)</h1>
 
-        <p><a href="https://fontawesome.com/">Font Awesome</a> is an example of an icon font - a typeface whose glyphs, rather than being alphabet characters, are vector icon art. Icon fonts can be extremely useful when building controls for user interfaces.</p>
+        <p><a href="https://fontawesome.com/"><i class="fas fa-check"></i>Font Awesome</a> is an example of an icon font - a typeface whose glyphs, rather than being alphabet characters, are vector icon art. Icon fonts can be extremely useful when building controls for user interfaces.<i class="fas fa-shopping-cart"></i></p>
 
         <!-- Use the Font Awesome interface to create a kit -->
         <!-- Add the Font Awesome embed script to the head of the document. -->
