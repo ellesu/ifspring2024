@@ -1,0 +1,26 @@
+.grid{
+    padding: 0;
+}
+.grid ul{
+    display: block;
+}
+.grid img{
+    width: 150px;
+}
+.grid.using-inline-block li{
+    display:inline-block;
+}
+.using-inline-block{
+    font-size: 0;
+}
+.grid.using-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid.using-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.using-grid li{
+    width:100%;
+}
