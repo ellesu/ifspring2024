@@ -1,0 +1,132 @@
+body{
+    font-family: "Archivo Narrow", sans-serif;
+}
+header{
+    /* background-color: rgb(255,0,0,.25); */
+    background-image: url(images/Asset0004.png);
+    background-size: cover;
+    background-position: center;
+    position:absolute 0px;
+    height: 500px;
+}
+header .column-container{
+    padding: 166px 0 184px 0;
+    text-align: center;
+}
+.column-container{
+    /* background-color: rgb(255,0,0,.25); */
+    margin:auto;
+    width:960px;
+}
+
+h1{
+    margin: 0;
+    line-height: 1;
+    font-weight:  bold;
+    font-size: 80px;
+    margin-bottom: 10px;
+    color:antiquewhite;
+}
+h2{
+    font-size: 30px;
+    margin-top: 10px;
+    color:antiquewhite;
+}
+h3{
+    margin: 27px 0;
+    line-height: 1;
+    font-size:40px;
+    text-align: center;
+    color: antiquewhite;
+}
+
+/* section 2 */
+.panel2{
+    padding: 10px;
+    padding-bottom:32px;
+    background-color: #2C151D;
+}
+.med-crop{
+    position: right;
+}
+.panel2 p{
+    color:antiquewhite;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.img-text img{
+    float: right;
+    padding-left: 40px;
+}
+
+
+/* section 3 */
+li{
+    list-style-type: none;
+    display: flex;
+    width: 50%;
+    margin-bottom: 10px;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0 0 0;
+    margin: 0;
+}
+.thumbnail{
+    width:200px;
+    height:150px;
+}
+.panel3{
+    /* background-color: rgb(255,0,0,.25); */
+    background-color: #18271F;
+    padding: 15px 0px;
+}
+.caption{
+    padding-left:10px;
+    padding-right: 30px;
+}
+div.column-container.panel3{
+    padding-top:8px;
+}
+li p{
+    color:antiquewhite;
+    font-size:18px;
+    margin-top:10px;
+    padding-bottom: 12px;
+}
+h4{
+    font-size:20px;
+    color:antiquewhite;
+    padding-top:0px;
+    margin-top: 0px;
+    margin-bottom:0px;
+}
+
+
+/* section 4 */
+.panel4{
+    background-color: #B6B670;
+    padding-bottom:64px;
+}
+.panel4 p{
+    padding-top:12px;
+    text-align: center;
+    font-size: 26px;
+}
+.panel4 h3{
+    color:black;
+}
+div.column-container.panel4{
+    padding: 15px 100px;
+    width: 700px;
+}
+
+footer{
+    background-color: #6959DA;
+    padding: 21px 0px;
+}
+footer p{
+    font-size:20px;
+    color:antiquewhite;
+}
