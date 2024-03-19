@@ -1,0 +1,175 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Crimson Text', serif;
+}
+
+.splash {
+    background-color: #d3ead3; /* Light sage green */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash h1 {
+    font-size: 2.5rem; /* Adjusted font size */
+}
+
+.splash-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%; /* Adjusted width */
+    max-width: 1200px; /* Limit maximum width */
+    padding: 5%; /* Adjusted padding */
+    box-sizing: border-box;
+}
+
+p {
+    font-size: large;
+}
+
+.image-section{
+    width: 50%;
+    height: 100%;
+}
+.image-section img {
+    width: 100%; /* Adjusted width */
+}
+
+.equipment-section {
+    background-color: #fce4ec; 
+    width: 40%; 
+    padding: 5%; 
+    border-radius: 5%;
+    box-sizing: border-box;
+}
+
+.equipment {
+    text-align: left;
+    justify-content: center;
+}
+
+.equipment h2 {
+    margin:0.25em;
+}
+
+.time {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time p{
+    font-size: medium;
+}
+
+.ingredients-section {
+    background-color: #9ac7c1;
+    /* height: 100%; */
+    width: 50%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.ingredients-section h2 {
+    margin-top: 0;
+}
+
+.ingredients-section ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.ingredients-image {
+    /* height: 30%;  */
+    width: 100%;
+}
+
+.ingredients-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.instructions-section {
+    background-color: #faf8b8; 
+    /* height: 100%; */
+    width: 50%; 
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.instructions-section h2 {
+    margin-top: 0;
+}
+
+.instructions-section ol {
+    padding-left: 20px;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.instructions-section p{
+    padding-top: 3%;
+}
+
+h2 {
+    font-variant: small-caps;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .splash h1 {
+        font-size: 1.5rem;
+        margin: 0px;
+        margin-top:10%;
+    }
+
+    .splash h3{
+        margin: 0px;
+        font-size:1rem;
+    }
+    .splash-content {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .equipment h2{
+        margin: 0.2em;
+    }
+    .image-section{
+        width: 100%;
+    }
+    .image-section img {
+        width: 90%;
+    }
+
+    .image-section p{
+        width: 100%;
+    }
+
+    .equipment-section ul{
+        margin: 0px;
+    }
+
+    .equipment-section,
+    .ingredients-section,
+    .instructions-section {
+        width: 100%; /* Adjusted width */
+    }
+
+    .section {
+        flex-direction: column; /* Adjusted flex direction */
+    }
+}
