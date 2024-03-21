@@ -24,6 +24,7 @@ h1 {
     overflow: hidden;
     box-sizing: border-box;
     text-align: center;
+    position:relative;
 }
 
 a#btn_spotify {
@@ -254,3 +255,93 @@ a.nike{
         background-color: white;
     }
   }
+
+  .button-container.cn{
+    position: relative;
+
+  }
+  .cn-logo{
+    position:absolute;
+    right:15%;
+    top:-5%;
+    width:65%;
+    z-index: 100;
+    /* opacity: .5; */
+  }
+
+  .bubbles{
+    position: absolute;
+    transition: all 0.5 ease;
+    z-index: 0;
+    right:50%;
+    top:32%;
+    width:30%;
+  }
+
+  .button-container.cn:hover .bubbles{
+    animation: fly 0.5s forwards;
+    animation-iteration-count: 1;
+  }
+
+  .button-container.cn:not(:hover) .bubbles{
+    animation: return 0.5s forwards;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes fly {
+    0%{
+        right:50%;
+        top:32%;
+    }
+    100%{
+        right:65%;
+        top:10%;
+    }
+  }
+
+  @keyframes return {
+    0%{
+        right:60%;
+        top:16%;
+    }
+    100%{
+        right:50%;
+        top:32%;
+    }
+  }
+
+  .button-container.nerf{
+    position: relative;
+  }
+
+  .nerf-logo {
+    position: absolute;
+    width:75%;
+    top:25%;
+    right:10%;
+  }
+
+.nerf:hover .nerf-logo {
+    animation: nerf .5s forwards;
+    animation-iteration-count: 1;
+}
+@keyframes nerf {
+    0%{
+        top:50%;
+        right:100%;
+    }
+    100%{
+        top:25%;
+        right:10%;
+    }
+}
+
+.tesla-logo{
+    position:absolute;
+    width:50%;
+    top: -15%;
+    right:25%;
+}
+.tesla:hover .tlogo{
+    fill:red;
+}
