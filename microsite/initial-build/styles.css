@@ -4,24 +4,33 @@ body{
     
 }
 
-.inner{
-  /* background-color: #E6DEDF; */
-}
+/* home */
+/* .window-one{
+  width:3.2em;
+  height:6.6em;
+  position:absolute;
+  left:30.5%;
+  top:20.5%;
+  background-color: #E6DEDF;
+  z-index: -100;
+} */
 
-.navigation{
-    position: fixed;
-    right:5%;
-    top:5%;
-    width:50%;
-}
-
-.nav-bar{
-    background-color: #2D1C0C;
-    width:100%;
+.content{
+  padding-top: 5%;
 }
 
 p{
-    font-family: "Garamond", serif;
+    font-family: "EB Garamond", serif;
+}
+
+.tagline {
+  color:#D5B66D;
+  font-style: italic;
+  font-family: "EB Garamond", Serif;
+  position:fixed;
+  right:35%;
+  bottom:5%;
+  font-size:xx-large;
 }
 .savoy{
     margin: 5% 20%;
@@ -74,12 +83,82 @@ p{
   .container{
     width: 100%;
   }
-  .navigation{
-    margin: 0 auto;
-    width: 70%;
-    /* background-color: aliceblue; */
+
+  
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding-top:2%;
+    top: -5%;
+    width: 96%; 
+    margin: 2%;
+    background-color: #2D1C0C;
+    box-sizing: border-box;
     z-index: 1000;
-}
+  }
+  
+  .logo {
+    flex-grow: 1;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation li {
+    margin-left: 20px;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .selected {
+    font-weight: bold;
+  }
+  
+  /* Hamburger menu */
+  .hamburger-menu {
+    display: none;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 500px) {
+    .logo{
+      width:500px;
+      position:absolute;
+      padding-top:4%;
+      
+    }
+    .navigation {
+      display: none;
+    }
+  
+    .hamburger-menu {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .hamburger-menu div {
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+  
+    /* Adjust nav-bar to align items vertically */
+    .nav-bar {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
 
 .navigation ul {
     list-style: none;
@@ -106,8 +185,15 @@ p{
     text-decoration: underline;
   }
 
-  .logo{
-    width:10%;
+  .logo {
+    width: 50%; 
+    max-width: 500px;
+    margin: 0;
+  }
+  
+  .logo svg {
+    width: 100%;
+    height: auto;
   }
 
 h1{
@@ -116,10 +202,122 @@ h1{
 }
 
 /* history page */
-.summary{
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color: #E6DEDF;
-    text-align: center;
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjusted for even spacing around items */
+  margin: 0 auto;
+  width: 60%;
+  /* position: fixed; */
+  /* bottom:2%; */
+  box-sizing: border-box;
+  padding: 1em;
+  gap: 1em;
+  background-color: #E6DEDF;
+}
+
+.component {
+  flex: 1 1 15%; /* Allows components to grow and shrink with a basis of 15% */
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center; /* Center items horizontally since it's a column */
+  text-align: center; /* Ensures text is centered under the icon */
+  min-width: 120px; /* Minimum width, adjust as needed */
+  box-sizing: border-box;
+}
+
+.component i {
+  font-size: 3em; /* Increase the size of the icons */
+  margin-bottom: 0.5em; /* Space between icon and text */
+}
+
+.component h3 {
+  font-size: 1em;
+  color:#2D1C0C;
+  margin: 0;
+}
+
+/* history: timeline component */
+.timeline-nav{
+  position: fixed;
+  right: 100px;
+  margin: auto;
+  color:#E6DEDF;
+
+}
+.timeline-nav li{
+  list-style-type: none;
+  color:#E6DEDF;
+}
+.timeline-nav a{
+  color:#E6DEDF;
+}
+.timeline-nav a:hover{
+  font-weight: bold;
+}
+
+.timeline-unit{
+  background-color: #E6DEDF;
+  width:500px;
+  padding:5%;
+  margin:auto;
+}
+
+nav .timeline{
+}
+
+/* notable guests */
+.guest-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.guest {
+  text-align: center;
+  width: 200px;
+}
+
+.guest img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.guest-name {
+  font-size: 18px;
+  color:#D5B66D;
+  font-family: "EB Garamond";
+  margin: 5px 0;
+}
+
+.guest-occupation {
+  font-size: 16px;
+  font-style: italic;
+  color:#D5B66D;
+  font-family: "EB Garamond";
+}
+
+.sort-options {
+  position: absolute;
+  right:37%;
+  padding-bottom:2%;
+}
+
+.sort-options button {
+  /* border: 2px solid ; */
+  background-color:#E6DEDF;
+  color:#2D1C0C;
+  cursor: pointer;
+  outline: none;
+}
+
+.sort-options button:hover {
+  background-color:#D5B66D;
+}
+
+.guest-list {
+  width: 70%;
+  margin: auto;
 }
