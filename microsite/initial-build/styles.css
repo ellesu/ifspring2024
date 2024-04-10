@@ -353,10 +353,37 @@ h1{
 }
 
 /* arts */
-.monet{
+.monet {
   position:absolute;
   width:50%;
   right:5%;
+}
+
+.arts-cover {
+  width: 100%;
+  height: 100%; 
+  top:11.3%;
+  position:fixed;
+  z-index: -100;
+  background-image: url('./images/monet-painting.jpeg');
+  background-size: cover; 
+  background-position: center; 
+  overflow:visible;
+}
+
+h1.arts {
+  color:#2D1C0C;
+  margin:0;
+}
+
+.fact{
+  width:10em;
+  height:15em;
+  justify-content: center;
+  text-align: center;
+  background-color: #E6DEDF;
+  color: #2D1C0C;
+  
 }
 
 /* footer */
