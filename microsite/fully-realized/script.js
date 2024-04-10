@@ -32,17 +32,37 @@ const guests = [
   
   function sortBy(method) {
     let sortedGuests = [...guests];
+    const first = document.getElementById('first');
+    const last = document.getElementById('last');
+    const recent =document.getElementById('recent');
+    const chron = document.getElementById('chron');
     switch(method) {
       case 'firstName':
+        first.classList = `selected`;
+        last.classList = ``;
+        recent.classList= ``;
+        chron.classList = ``;
         sortedGuests.sort((a, b) => a.firstName.localeCompare(b.firstName));
         break;
       case 'lastName':
+        first.classList = ``;
+        last.classList = `selected`;
+        recent.classList= ``;
+        chron.classList = ``;
         sortedGuests.sort((a, b) => a.lastName.localeCompare(b.lastName));
         break;
       case 'recency':
+        first.classList = ``;
+        last.classList = ``;
+        recent.classList= `selected`;
+        chron.classList = ``;
         sortedGuests.sort((a, b) => b.era - a.era);
         break;
       case 'chronological':
+        first.classList = ``;
+        last.classList = ``;
+        recent.classList= ``;
+        chron.classList = `selected`;
         sortedGuests.sort((a, b) => a.era - b.era);
         break;
     }

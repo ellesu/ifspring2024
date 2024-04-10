@@ -1,6 +1,7 @@
 body{
     background-color: #2D1C0C;
     font-family: "Poppins", sans-serif;
+    margin:0;
     
 }
 
@@ -17,6 +18,7 @@ body{
 
 .content{
   padding-top: 5%;
+  /* position: a */
 }
 
 p{
@@ -98,10 +100,10 @@ p{
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    padding-top:2%;
-    top: -5%;
-    width: 96%; 
-    margin: 2%;
+    padding:2%;
+    padding-bottom: 1%;
+    width: 100%; 
+    margin: 0%;
     background-color: #2D1C0C;
     box-sizing: border-box;
     z-index: 1000;
@@ -205,6 +207,7 @@ p{
   }
 
 h1{
+  padding-top:2%;
   text-align: center;
   color:#D5B66D;
 }
@@ -251,7 +254,7 @@ h1{
 
 /* history: timeline component */
 .timeline-nav{
-  position: fixed;
+  position: sticky;
   right: 100px;
   top:40%;
   margin: auto;
@@ -274,11 +277,31 @@ h1{
   width:500px;
   padding:5%;
   margin:auto;
+  position: relative;
 }
 
 /* notable guests */
 .sort-title {
   color:#D5B66D;
+}
+
+.sort-options button {
+  background-color: transparent;
+  font-family: "Poppins", "sans serif";
+  border:2px solid #D5B66D;
+  color:#E6DEDF;
+}
+
+.sort-options button:hover {
+  background-color:#D5B66D;
+  color:#2D1C0C;
+  cursor: pointer;
+}
+
+.sort-options button.selected{
+  background-color: #D5B66D;
+  color:#2D1C0C;
+  border: 2px solid #D5B66D;
 }
 
 .spacer{
@@ -290,7 +313,10 @@ h1{
 
 .guest-nav {
   position: sticky;
+  justify-content: center;
+  text-align: center;
   top:10%;
+  height:10%;
   background-color: #2D1C0C;
 }
 
@@ -328,24 +354,13 @@ h1{
 }
 
 .sort-options {
-  position: absolute;
-  right:37%;
+  position: relative;
+  align-items: center;
   justify-content: center;
   justify-self: center;
   z-index: 100;
 }
 
-.sort-options button {
-  /* border: 2px solid ; */
-  background-color:#E6DEDF;
-  color:#2D1C0C;
-  cursor: pointer;
-  outline: none;
-}
-
-.sort-options button:hover {
-  background-color:#D5B66D;
-}
 
 .guest-list {
   width: 70%;
@@ -361,18 +376,13 @@ h1{
 
 .arts-cover {
   width: 100%;
-  height: 100%; 
-  top:11.3%;
-  position:fixed;
-  z-index: -100;
+  height: 40vh; 
   background-image: url('./images/monet-painting.jpeg');
   background-size: cover; 
   background-position: center; 
-  overflow:visible;
 }
 
 h1.arts {
-  color:#2D1C0C;
   margin:0;
 }
 
