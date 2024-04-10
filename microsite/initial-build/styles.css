@@ -23,6 +23,14 @@ p{
     font-family: "EB Garamond", serif;
 }
 
+.cover{
+  width: 100%;
+  height: 40vh; 
+  background-image: url('./images/savoy.png');
+  background-size: cover; 
+  background-position: center; 
+}
+
 .tagline {
   color:#D5B66D;
   font-style: italic;
@@ -202,38 +210,42 @@ h1{
 }
 
 /* history page */
+.savoy-img {
+  width: 50%;
+}
 .summary {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; /* Adjusted for even spacing around items */
   margin: 0 auto;
+  margin-top:2%;
   width: 60%;
   /* position: fixed; */
   /* bottom:2%; */
   box-sizing: border-box;
   padding: 1em;
   gap: 1em;
-  background-color: #E6DEDF;
+  /* background-color: #E6DEDF; */
 }
 
 .component {
-  flex: 1 1 15%; /* Allows components to grow and shrink with a basis of 15% */
+  flex: 1 1 15%;
   display: flex;
-  flex-direction: column; /* Stacks items vertically */
-  align-items: center; /* Center items horizontally since it's a column */
-  text-align: center; /* Ensures text is centered under the icon */
-  min-width: 120px; /* Minimum width, adjust as needed */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 120px; 
   box-sizing: border-box;
 }
 
 .component i {
-  font-size: 3em; /* Increase the size of the icons */
-  margin-bottom: 0.5em; /* Space between icon and text */
+  font-size: 3em;
+  margin-bottom: 0.5em;
 }
 
 .component h3 {
   font-size: 1em;
-  color:#2D1C0C;
+  color:#F0EDEB;
   margin: 0;
 }
 
@@ -241,6 +253,7 @@ h1{
 .timeline-nav{
   position: fixed;
   right: 100px;
+  top:40%;
   margin: auto;
   color:#E6DEDF;
 
@@ -339,6 +352,12 @@ h1{
   margin: auto;
 }
 
+/* arts */
+.monet{
+  position:absolute;
+  width:50%;
+  right:5%;
+}
 
 /* footer */
 footer {
