@@ -386,6 +386,13 @@ h1.arts {
   
 }
 
+.facts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 /* footer */
 footer {
   width: 100%;
