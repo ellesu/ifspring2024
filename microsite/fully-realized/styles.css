@@ -1,0 +1,434 @@
+body{
+    background-color: #2D1C0C;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+/* home */
+/* .window-one{
+  width:3.2em;
+  height:6.6em;
+  position:absolute;
+  left:30.5%;
+  top:20.5%;
+  background-color: #E6DEDF;
+  z-index: -100;
+} */
+
+.content{
+  padding-top: 5%;
+}
+
+p{
+    font-family: "EB Garamond", serif;
+}
+
+.cover{
+  width: 100%;
+  height: 40vh; 
+  background-image: url('./images/savoy.png');
+  background-size: cover; 
+  background-position: center; 
+}
+
+.tagline {
+  color:#D5B66D;
+  font-style: italic;
+  font-family: "EB Garamond", Serif;
+  position:fixed;
+  right:35%;
+  bottom:5%;
+  font-size:xx-large;
+}
+.savoy{
+    margin: 5% 20%;
+    text-align: center;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.savoy svg {
+    width: 60%;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    z-index: -1;
+  }
+
+.home-nav{
+    margin: 0 auto;
+    width: 70%;
+    /* background-color: aliceblue; */
+    z-index: 1000;
+}
+
+.home-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+  }
+  
+  .home-nav ul li {
+    font-size: medium;
+  }
+  
+  .home-nav ul li a {
+    color: #D5B66D;
+    text-decoration: none;
+  }
+  
+  .home-nav ul li a:hover {
+    font-weight: bold; /* Bold font on hover */
+  }
+
+
+  /* navigation */
+  .container{
+    width: 100%;
+  }
+
+  
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding-top:2%;
+    top: -5%;
+    width: 96%; 
+    margin: 2%;
+    background-color: #2D1C0C;
+    box-sizing: border-box;
+    z-index: 1000;
+  }
+  
+  .logo {
+    flex-grow: 1;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation li {
+    margin-left: 20px;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .selected {
+    font-weight: bold;
+  }
+  
+  /* Hamburger menu */
+  .hamburger-menu {
+    display: none;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 500px) {
+    .logo{
+      width:500px;
+      position:absolute;
+      padding-top:4%;
+      
+    }
+    .navigation {
+      display: none;
+    }
+  
+    .hamburger-menu {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .hamburger-menu div {
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+  
+    /* Adjust nav-bar to align items vertically */
+    .nav-bar {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+  }
+  
+  .navigation ul li {
+    font-size: medium;
+  }
+  
+  .navigation ul li a {
+    color: #D5B66D;
+    text-decoration: none;
+  }
+  
+  .navigation ul li a:hover {
+    font-weight: bold; /* Bold font on hover */
+  }
+
+  .navigation .selected{
+    text-decoration: underline;
+  }
+
+  .logo {
+    width: 50%; 
+    max-width: 500px;
+    margin: 0;
+  }
+  
+  .logo svg {
+    width: 100%;
+    height: auto;
+  }
+
+h1{
+  text-align: center;
+  color:#D5B66D;
+}
+
+/* history page */
+.savoy-img {
+  width: 50%;
+}
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjusted for even spacing around items */
+  margin: 0 auto;
+  margin-top:2%;
+  width: 60%;
+  /* position: fixed; */
+  /* bottom:2%; */
+  box-sizing: border-box;
+  padding: 1em;
+  gap: 1em;
+  /* background-color: #E6DEDF; */
+}
+
+.component {
+  flex: 1 1 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 120px; 
+  box-sizing: border-box;
+}
+
+.component i {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.component h3 {
+  font-size: 1em;
+  color:#F0EDEB;
+  margin: 0;
+}
+
+/* history: timeline component */
+.timeline-nav{
+  position: fixed;
+  right: 100px;
+  top:40%;
+  margin: auto;
+  color:#E6DEDF;
+
+}
+.timeline-nav li{
+  list-style-type: none;
+  color:#E6DEDF;
+}
+.timeline-nav a{
+  color:#E6DEDF;
+}
+.timeline-nav a:hover{
+  font-weight: bold;
+}
+
+.timeline-unit{
+  background-color: #E6DEDF;
+  width:500px;
+  padding:5%;
+  margin:auto;
+}
+
+/* notable guests */
+.sort-title {
+  color:#D5B66D;
+}
+
+.spacer{
+  width:100%;
+  position:fixed;
+  padding:5%;
+  background-color: #2D1C0C;
+}
+
+.guest-nav {
+  position: sticky;
+  top:10%;
+  background-color: #2D1C0C;
+}
+
+.guest-list {
+  padding-top:5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.guest {
+  text-align: center;
+  width: 200px;
+}
+
+.guest img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.guest-name {
+  font-size: 18px;
+  color:#D5B66D;
+  font-family: "EB Garamond";
+  margin: 5px 0;
+}
+
+.guest-occupation {
+  font-size: 16px;
+  font-style: italic;
+  color:#D5B66D;
+  font-family: "EB Garamond";
+}
+
+.sort-options {
+  position: absolute;
+  right:37%;
+  justify-content: center;
+  justify-self: center;
+  z-index: 100;
+}
+
+.sort-options button {
+  /* border: 2px solid ; */
+  background-color:#E6DEDF;
+  color:#2D1C0C;
+  cursor: pointer;
+  outline: none;
+}
+
+.sort-options button:hover {
+  background-color:#D5B66D;
+}
+
+.guest-list {
+  width: 70%;
+  margin: auto;
+}
+
+/* arts */
+.monet {
+  position:absolute;
+  width:50%;
+  right:5%;
+}
+
+.arts-cover {
+  width: 100%;
+  height: 100%; 
+  top:11.3%;
+  position:fixed;
+  z-index: -100;
+  background-image: url('./images/monet-painting.jpeg');
+  background-size: cover; 
+  background-position: center; 
+  overflow:visible;
+}
+
+h1.arts {
+  color:#2D1C0C;
+  margin:0;
+}
+
+.fact{
+  width:10em;
+  height:15em;
+  justify-content: center;
+  text-align: center;
+  background-color: #E6DEDF;
+  color: #2D1C0C;
+  
+}
+
+.facts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  padding: 20px;
+  padding-top: 50px;
+  color:#D5B66D; 
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+.footer-left, .footer-right {
+  flex: 1; 
+  min-width: 280px;
+}
+
+footer a{
+  color:#D5B66D;
+}
+
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left, .footer-right {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-right {
+    order: -1; 
+  }
+}
