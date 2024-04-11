@@ -12,15 +12,6 @@ h2 {
 }
 
 /* home */
-/* .window-one{
-  width:3.2em;
-  height:6.6em;
-  position:absolute;
-  left:30.5%;
-  top:20.5%;
-  background-color: #E6DEDF;
-  z-index: -100;
-} */
 
 .content{
   padding-top: 5%;
@@ -112,15 +103,15 @@ p{
   }
 
   .home-nav .spacer {
-    /* background-color: #E6DEDF; */
     width:100%;
     position:relative;
-    height: .001%;
+    height: 1%;
+    padding:2%;
     margin:0;
   }
 
   .home-nav a:hover {
-    font-weight: bold; /* Bold font on hover */
+    font-weight: bold;
   }
 
 
