@@ -180,6 +180,7 @@ p{
   
     .hamburger-menu {
       display: block;
+      content:icon;
       cursor: pointer;
     }
   

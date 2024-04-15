@@ -74,10 +74,10 @@ const guests = [
   
   displayGuests(guests);
 
-  
+
   // card flipping
 
-  const fact = document.querySelector(".fact");
+  const fact = document.querySelector(".facts");
   fact.addEventListener("click", function (e){
     fact.classList.toggle('flipped');
   });
