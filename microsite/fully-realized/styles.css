@@ -500,13 +500,42 @@ h1.arts {
   margin-top:-3.5%;
 }
 
+/* fun facts */
+
+.facts-cover {
+  width: 100%;
+  height: 50vh; 
+  background-image: url('./images/savoy-elevator.png');
+  background-size: cover; 
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+h2.facts-instruction{
+  margin:none;
+  padding:0;
+}
+
+.fact-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  width:60%;
+  justify-content: center;
+  right:-20%;
+}
+
 .fact{
+  margin:2em 1em 0;
   width:10em;
   height:15em;
   justify-content: center;
   text-align: center;
   background-color: #E6DEDF;
+  border: 5px solid #D5B66D;
   color: #2D1C0C;
+  vertical-align: middle;
   
 }
 
@@ -515,6 +544,10 @@ h1.arts {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
+}
+
+.text {
+  padding:1em;
 }
 
 /* footer */

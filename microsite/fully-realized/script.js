@@ -1,3 +1,4 @@
+// notable guest list
 const guests = [
     { firstName: 'Audrey', lastName: 'Hepburn', occupation: 'Actress', image: './portraits/hepburn.png', era: 1960},
     { firstName: 'Babe', lastName: 'Ruth', occupation: 'Baseball Player', image: './portraits/ruth.png', era: 1920},  
@@ -14,6 +15,8 @@ const guests = [
     
   ];
 
+  // guest sorting function
+  
   function displayGuests(sortedGuests) {
     const guestList = document.getElementById('guestList');
     guestList.innerHTML = '';
@@ -70,3 +73,10 @@ const guests = [
   }
   
   displayGuests(guests);
+
+  // card flipping
+
+  const fact = document.querySelector(".fact");
+  fact.addEventListener("click", function (e){
+    fact.classList.toggle('flipped');
+  });
