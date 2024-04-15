@@ -74,6 +74,7 @@ const guests = [
   
   displayGuests(guests);
 
+  
   // card flipping
 
   const fact = document.querySelector(".fact");

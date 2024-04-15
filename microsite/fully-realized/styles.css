@@ -11,6 +11,11 @@ h2 {
   margin: none;
 }
 
+.inline img {
+  width: 50%;
+  height:50%;
+}
+
 /* home */
 
 .content{
@@ -20,8 +25,6 @@ h2 {
 p{
     font-family: "EB Garamond", serif;
 }
-
-/* home */
 
 .tagline {
   color:#D5B66D;
@@ -68,7 +71,6 @@ p{
 .home-nav{
     margin: 0 auto;
     width: 70%;
-    /* background-color: aliceblue; */
     z-index: 1000;
 }
 
@@ -253,16 +255,21 @@ h1{
 .summary {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; /* Adjusted for even spacing around items */
+  justify-content: space-around;
   margin: 0 auto;
   margin-top:2%;
   width: 60%;
-  /* position: fixed; */
-  /* bottom:2%; */
   box-sizing: border-box;
   padding: 1em;
   gap: 1em;
-  /* background-color: #E6DEDF; */
+}
+
+.anchor {
+  height:10em;
+  width:100%;
+  z-index: -1;
+  position:absolute;
+  top:-30px;
 }
 
 .component {
@@ -536,7 +543,15 @@ h2.facts-instruction{
   border: 5px solid #D5B66D;
   color: #2D1C0C;
   vertical-align: middle;
-  
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.fact.flipped{
+  transform: rotateY(180deg);
 }
 
 .facts {
@@ -548,6 +563,47 @@ h2.facts-instruction{
 
 .text {
   padding:1em;
+}
+
+.front {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.text.front {
+  display: flex;
+  position:relative;
+  width: 90%;
+  height: 100%;
+  right:5%;
+  top:-10%;
+  -webkit-backface-visibility: hidden;
+}
+
+.text.back {
+  display: flex;
+  position:relative;
+  width: 90%;
+  height: 100%;
+  right:5%;
+  top:-10%;
+  -webkit-backface-visibility: hidden;
+}
+
+.question:after{
+  content:'';
+  display:block;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: -1;
+}
+
+.text.back{
+  transform: rotateY(180deg);
 }
 
 /* footer */
