@@ -9,6 +9,9 @@ h2 {
   color:#D5B66D;
   text-align: center;
   margin: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2em;
 }
 
 .inline img {
@@ -213,6 +216,8 @@ p{
   .navigation ul li a {
     color: #D5B66D;
     text-decoration: none;
+    font-weight: 200;
+    text-transform: uppercase;
   }
   
   .navigation ul li a:hover {
@@ -238,6 +243,11 @@ h1{
   padding-top:2%;
   text-align: center;
   color:#D5B66D;
+  text-transform: capitalize;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 3em;
+  margin:0;
 }
 
 /* history page */
@@ -291,6 +301,7 @@ h1{
 .component h3 {
   font-size: 1em;
   color:#F0EDEB;
+  font-weight: 200;
   margin: 0;
 }
 
@@ -331,7 +342,7 @@ h1{
 
 .timeline-unit{
   background-color: #E6DEDF;
-  width:500px;
+  width:600px;
   padding:5%;
   margin:auto;
   position: relative;
