@@ -74,6 +74,20 @@ p{
   margin: auto;
 }
 
+/* animation */
+
+.frame.active {
+  display: block;
+}
+.frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
 .home-nav{
     margin: 0 auto;
     width: 70%;
@@ -335,14 +349,26 @@ h1{
 }
 
 /* history: timeline component */
+.timeline-container {
+  display:flex;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+
 .timeline-nav{
   position: sticky;
   right: 100px;
   top:40%;
   margin: auto;
   color:#E6DEDF;
-
 }
+
+.timeline-right {
+  width:25em;
+  height:5em;
+  /* background-color: #D5B66D; */
+}
+
 .timeline-nav li{
   list-style-type: none;
   color:#E6DEDF;
@@ -580,6 +606,9 @@ h2.facts-instruction{
   text-align: center;
   background-color: #E6DEDF;
   border: 5px solid #D5B66D;
+  border-radius: 2%;
+  /* box-shadow: 1px 1px 2px 5px #170d04; */
+  box-shadow: 0 6px 12px 0 rgba(22, 4, 4, 0.5);
   color: #2D1C0C;
   vertical-align: middle;
 

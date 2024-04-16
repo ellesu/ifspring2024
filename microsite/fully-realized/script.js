@@ -1,3 +1,22 @@
+// home page animation 
+document.addEventListener("DOMContentLoaded", function() {
+  const frames = document.querySelectorAll(".frame");
+  let currentFrame = 0;
+
+  function showFrame(frameIndex) {
+      frames.forEach(frame => frame.classList.remove("active"));
+      frames[frameIndex].classList.add("active");
+  }
+
+  function animateFrames() {
+      showFrame(currentFrame);
+      currentFrame = (currentFrame + 1) % frames.length;
+      setTimeout(animateFrames, 300); 
+  }
+
+  animateFrames();
+});
+
 // notable guest list
 const guests = [
     { firstName: 'Audrey', lastName: 'Hepburn', occupation: 'Actress', image: './portraits/hepburn.png', era: 1960},
