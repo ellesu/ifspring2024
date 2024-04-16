@@ -276,11 +276,11 @@ h1{
 }
 
 .anchor {
-  height:10em;
+  height:12em;
   width:100%;
   z-index: -1;
   position:absolute;
-  top:-30px;
+  top:-50px;
 }
 
 .component {
@@ -343,7 +343,7 @@ h1{
 .timeline-unit{
   background-color: #E6DEDF;
   width:600px;
-  padding:5%;
+  padding:3% 5%;
   margin:auto;
   position: relative;
 }
