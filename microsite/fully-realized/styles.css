@@ -359,12 +359,12 @@ h1{
   position: sticky;
   right: 100px;
   top:40%;
-  margin: auto;
+  /* margin: auto; */
   color:#E6DEDF;
 }
 
 .timeline-right {
-  width:25em;
+  width:9em;
   height:5em;
   /* background-color: #D5B66D; */
 }
@@ -392,21 +392,34 @@ h1{
 .timeline-unit{
   background-color: #E6DEDF;
   width:600px;
-  padding:3% 5%;
+  padding:3em;
   margin:auto;
   position: relative;
 }
+
+.timeline-mobile {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .timeline-container {
+    display: none;
+  }
+  .timeline-mobile {
+    display: block;
+    width: 100%;
+  }
+  .timeline-unit {
+    width: 100%;
+    max-width: fit-content;
+  }
+}
+
 .timeline-unit h2 {
   color:#2D1C0C;
 }
 .timeline-unit img {
   width:100%;
-}
-
-@media (max-width: 600px) {
-  .timeline-unit {
-    width: 90%;
-  }
 }
 
 /* notable guests */
