@@ -22,7 +22,7 @@ h2 {
 /* home */
 
 .content{
-  padding-top: 5%;
+  padding-top: 6%;
 }
 
 p{
@@ -198,7 +198,7 @@ p{
   }
   
   /* Responsive design adjustments */
-  @media (max-width: 500px) {
+  @media (max-width: 1000px) {
     .logo{
       width:500px;
       position:absolute;
@@ -412,6 +412,7 @@ h1{
   .timeline-unit {
     width: 100%;
     max-width: fit-content;
+
   }
 }
 
