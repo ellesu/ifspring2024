@@ -130,7 +130,7 @@ p{
   }
 
   .home-nav a:hover {
-    font-weight: bold;
+    text-shadow:2px 2px 8px #E6DEDF,2px 2px 8px #E6DEDF;
   }
 
 
@@ -235,7 +235,7 @@ p{
   }
   
   .navigation ul li a:hover {
-    font-weight: bold;
+    text-shadow:2px 2px 8px #E6DEDF;
   }
 
   .navigation .selected{
@@ -349,9 +349,18 @@ h1{
 }
 .timeline-nav a{
   color:#E6DEDF;
+  font-weight: 100;
+  font-size: large;
+  text-transform: uppercase;
 }
 .timeline-nav a:hover{
-  font-weight: bold;
+  /* font-weight: bold; */
+  text-shadow:2px 2px 8px #E6DEDF, 2px 2px 8px #E6DEDF;
+}
+.timeline-nav ul li h3 {
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: x-large;
 }
 
 .timeline-unit{
@@ -395,6 +404,8 @@ h1{
 
 .sort-options button {
   background-color: transparent;
+  text-transform: uppercase;
+  font-weight:300;
   font-family: "Poppins", "sans serif";
   border:2px solid #D5B66D;
   color:#E6DEDF;
@@ -410,6 +421,7 @@ h1{
   background-color: #D5B66D;
   color:#2D1C0C;
   border: 2px solid #D5B66D;
+  font-weight: 600;
 }
 
 button.title {
@@ -464,7 +476,7 @@ button.title:hover {
   font-size: 18px;
   color:#D5B66D;
   font-family: "EB Garamond";
-  margin: 5px 0;
+  margin: 0;
 }
 
 .guest-occupation {
@@ -472,6 +484,7 @@ button.title:hover {
   font-style: italic;
   color:#D5B66D;
   font-family: "EB Garamond";
+  margin-bottom: 10px;
 }
 
 .sort-options {
