@@ -1,0 +1,801 @@
+body{
+    background-color: #2D1C0C;
+    font-family: "Poppins", sans-serif;
+    margin:0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  color:#D5B66D;
+  text-align: center;
+  margin: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+.inline img {
+  width: 50%;
+  height:50%;
+}
+
+/* mobile nav */
+
+.mobile-nav {
+  display:none;
+}
+
+.menu-icon {
+  color: #D5B66D;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  background-color: #2D1C0C;
+  top: 50px;
+  right: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1001;
+}
+
+.menu a {
+  display: block;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.menu a:hover {
+  background-color: #3e2a1b;
+}
+
+@media (max-width: 1000px) {
+  .menu-icon {
+      display: block;
+      position: absolute;
+      right: 10%;
+      top: 5%;
+      font-size: xx-large;
+      /* width: 200px; */
+  }
+
+  .menu {
+      display: none;
+  }
+  .mobile-nav .logo {
+    max-width: 200px;
+
+  }
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2D1C0C;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 20px;
+}
+}
+
+/* home */
+
+.content{
+  padding-top: 6%;
+}
+
+p{
+    font-family: "EB Garamond", serif;
+}
+
+.tagline {
+  color:#D5B66D;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: none;
+  font-family: "EB Garamond", Serif;
+  position:relative;
+  text-align:center;
+  bottom:10%;
+  margin:0;
+  font-size:xx-large;
+}
+
+.savoy {
+    top:50vh;
+    transform:translateY(-50%);
+    margin: auto;
+    padding-top: 5%;
+    padding-left:15%;
+    width: 70%;
+    position: fixed;
+    text-align: center;
+    overflow: none;
+    justify-content: center;
+}
+
+.savoy svg {
+    width: 90%;
+    height: auto;
+    position: relative;
+    justify-self: center;
+    padding: 0;
+    z-index: -1;
+  }
+
+.savoy-image {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  margin: auto;
+}
+
+/* animation */
+
+.frame.active {
+  display: block;
+}
+.frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.home-nav{
+    margin: 0 auto;
+    width: 70%;
+    z-index: 1000;
+}
+
+.home-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: x-large;
+}
+
+.home-nav a {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: medium;
+    color: #D5B66D;
+    text-decoration: none;
+    z-index: 1000;
+  }
+
+  .home-nav a#history {
+    position:fixed;
+    left:27.5%;
+  }
+
+  .home-nav a#guests {
+    position:fixed;
+    left:37.5%;
+  }
+  
+  .home-nav a#arts {
+    position:fixed;
+    left:54.5%;
+  }
+
+  .home-nav a#facts {
+    position:fixed;
+    left:66%;
+  }
+
+  .home-nav .spacer {
+    width:100%;
+    position:relative;
+    height: 1%;
+    padding:2%;
+    margin:0;
+  }
+
+  .home-nav a:hover {
+    text-shadow:2px 2px 8px #E6DEDF,2px 2px 8px #E6DEDF;
+  }
+
+
+
+  /* navigation */
+  .container{
+    width: 100%;
+  }
+
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding:2%;
+    padding-bottom: 1%;
+    width: 100%; 
+    margin: 0%;
+    background-color: #2D1C0C;
+    box-sizing: border-box;
+    z-index: 1000;
+  }
+  
+  .logo {
+    flex-grow: 1;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation li {
+    margin-left: 20px;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .selected {
+    font-weight: bold;
+  }
+  
+  /* Hamburger menu */
+  .hamburger-menu {
+    display: none;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 1000px) {
+    .logo{
+      max-width:100px;
+      position:absolute;
+      padding-top:4%;
+      
+    }
+    .navigation {
+      display: none;
+    }
+  
+    .hamburger-menu {
+      display: block;
+      content:icon;
+      cursor: pointer;
+    }
+  
+    .hamburger-menu div {
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+  
+    .nav-bar {
+      display:none;
+      /* flex-direction: row;
+      justify-content: space-between; */
+    }
+  }
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navigation ul li {
+    font-size: medium;
+  }
+  
+  .navigation ul li a {
+    color: #D5B66D;
+    text-decoration: none;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+  
+  .navigation ul li a:hover {
+    text-shadow:2px 2px 8px #E6DEDF;
+  }
+
+  .navigation .selected{
+    text-decoration: underline;
+  }
+
+  .logo {
+    width: 50%; 
+    max-width: 500px;
+    margin: 0;
+  }
+  
+  .logo svg {
+    width: 100%;
+    height: auto;
+  }
+
+h1{
+  padding-top:2%;
+  text-align: center;
+  color:#D5B66D;
+  text-transform: capitalize;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 3em;
+  margin:0;
+}
+
+/* history page */
+.cover{
+  width: 100%;
+  height: 50vh; 
+  background-image: url('./images/savoy.jpg');
+  background-size: cover; 
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+.savoy-img {
+  width: 50%;
+}
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top:2%;
+  width: 60%;
+  box-sizing: border-box;
+  padding: 1em;
+  gap: 1em;
+}
+
+.anchor {
+  height:12em;
+  width:100%;
+  z-index: -1;
+  position:absolute;
+  top:-50px;
+}
+
+.component {
+  flex: 1 1 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 120px; 
+  box-sizing: border-box;
+}
+
+.component i {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.component h3 {
+  font-size: 1em;
+  color:#F0EDEB;
+  font-weight: 200;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .component {
+    flex: 1 1 10%;
+  }
+  .component i {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  .component h3 {
+    font-size: .85em;
+    color:#F0EDEB;
+    margin: 0;
+  }
+}
+
+/* history: timeline component */
+.timeline-nav ul li a {
+  text-decoration: none;
+}
+.timeline-nav.current ul li a {
+  text-decoration: underline;
+}
+
+.timeline-container {
+  display:flex;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+
+.timeline-nav{
+  position: sticky;
+  right: 100px;
+  top:40%;
+  /* margin: auto; */
+  color:#E6DEDF;
+}
+
+.timeline-right {
+  width:9em;
+  height:5em;
+  /* background-color: #D5B66D; */
+}
+
+.timeline-nav li{
+  list-style-type: none;
+  color:#E6DEDF;
+}
+.timeline-nav a{
+  color:#E6DEDF;
+  font-weight: 100;
+  font-size: large;
+  text-transform: uppercase;
+}
+.timeline-nav a:hover{
+  /* font-weight: bold; */
+  text-shadow:2px 2px 8px #E6DEDF, 2px 2px 8px #E6DEDF;
+}
+.timeline-nav ul li h3 {
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: x-large;
+}
+
+.timeline-unit{
+  background-color: #E6DEDF;
+  width:600px;
+  padding:3em;
+  margin:auto;
+  position: relative;
+}
+
+.timeline-mobile {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .timeline-container {
+    display: none;
+  }
+  .timeline-mobile {
+    display: block;
+    width: 100%;
+  }
+  .timeline-unit {
+    width: 100%;
+    max-width: fit-content;
+
+  }
+}
+
+.timeline-unit h2 {
+  color:#2D1C0C;
+}
+.timeline-unit img {
+  width:100%;
+}
+
+/* notable guests */
+
+.guests-cover {
+  width: 100%;
+  height: 50vh; 
+  background-image: url('./images/savoy-room.jpg');
+  /* opacity: 0.5; */
+  background-size: cover; 
+  background-attachment: fixed;
+  background-position: center; 
+  margin-bottom: 2%;
+}
+
+/* sort */
+
+.sort-title {
+  color:#D5B66D;
+}
+
+.sort-options button {
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight:300;
+  font-family: "Poppins", "sans serif";
+  border:2px solid #D5B66D;
+  color:#E6DEDF;
+}
+
+.sort-options button:hover {
+  background-color:#D5B66D;
+  color:#2D1C0C;
+  cursor: pointer;
+}
+
+.sort-options button.selected{
+  background-color: #D5B66D;
+  color:#2D1C0C;
+  border: 2px solid #D5B66D;
+  font-weight: 600;
+}
+
+button.title {
+  border:none;
+  color:#D5B66D;
+  cursor:none;
+}
+
+button.title:hover {
+  border:none;
+  color:#D5B66D;
+  background-color: transparent;
+  cursor:default;
+}
+
+.spacer{
+  width:100%;
+  position:fixed;
+  padding:5%;
+  background-color: #2D1C0C;
+}
+
+.guest-nav {
+  position: sticky;
+  justify-content: center;
+  text-align: center;
+  top:6em;
+  height:3em;
+  background-color: #2D1C0C;
+}
+
+.guest-list {
+  padding-top:5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.guest {
+  text-align: center;
+  width: 200px;
+}
+
+.guest img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.guest-name {
+  font-size: 18px;
+  color:#D5B66D;
+  font-family: "EB Garamond";
+  margin: 0;
+}
+
+.guest-occupation {
+  font-size: 16px;
+  font-style: italic;
+  color:#D5B66D;
+  font-family: "EB Garamond";
+  margin-bottom: 10px;
+}
+
+.sort-options {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  z-index: 100;
+  position: sticky;
+  top:5em;
+  background-color: #2D1C0C;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  width:100%;
+}
+
+
+.guest-list {
+  width: 70%;
+  margin: auto;
+}
+
+/* arts */
+.monet {
+  position:absolute;
+  width:50%;
+  right:5%;
+}
+
+h2.quote{
+  margin-bottom: 0;
+}
+
+h2.credit{
+  font-weight: 100;
+  margin-top:0;
+}
+
+.arts-cover {
+  width: 100%;
+  height: 50vh; 
+  background-image: url('./images/monet-painting.jpeg');
+  background-size: cover; 
+  background-attachment: fixed;
+  text-align: center;
+  color:#2D1C0C;
+  background-position: center; 
+}
+
+.arts-cover h2 {
+  color:#2D1C0C;
+  top:50%;
+  font-family: "EB Garamond", "serif";
+  text-align: center;
+  position: inherit;
+}
+
+h1.arts {
+  margin-top:-3.5%;
+}
+
+/* fun facts */
+
+.facts-cover {
+  width: 100%;
+  height: 50vh; 
+  background-image: url('./images/savoy-elevator.png');
+  background-size: cover; 
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+h2.facts-instruction{
+  margin:none;
+  padding:0;
+}
+
+.fact-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  width:60%;
+  justify-content: center;
+  right:-20%;
+}
+
+.facts{
+  margin:1em 1em 0;
+  width:10em;
+  height:15em;
+  justify-content: center;
+  text-align: center;
+  background-color: #E6DEDF;
+  border: 5px solid #D5B66D;
+  border-radius: 2%;
+  box-shadow: 0 6px 12px 0 rgba(22, 4, 4, 0.5);
+  color: #2D1C0C;
+  vertical-align: middle;
+  perspective: 1000px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.facts.flipped{
+  transform: rotateY(180deg);
+}
+
+.facts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.text {
+  padding:1em;
+  position:absolute;
+  width:100%;
+  height:100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  font-family: "EB Garamond", serif;
+}
+
+.text h3 {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: x-large;
+}
+
+.question, .answer {
+  position: absolute;
+  justify-self: center;
+  text-align: center;
+  width:70%;
+  height: 100%;
+  left:-35%;
+  z-index: 100;
+}
+
+.answer {
+  display: none;
+  transform: rotateY(180deg);
+}
+
+.flipped .question{
+  display: none;
+}
+
+.flipped .answer {
+  display: block;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  padding: 20px;
+  padding-top: 50px;
+  color:#D5B66D; 
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+.footer-left, .footer-right {
+  flex: 1; 
+  min-width: 280px;
+}
+
+footer a{
+  color:#D5B66D;
+}
+
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left, .footer-right {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-right {
+    order: -1; 
+  }
+}
