@@ -437,7 +437,7 @@ h1{
 .timeline-nav ul li a {
   text-decoration: none;
 }
-.timeline-nav.current ul li a {
+.timeline-nav ul li a.current {
   text-decoration: underline;
 }
 
