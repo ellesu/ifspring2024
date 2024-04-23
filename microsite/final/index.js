@@ -1,3 +1,10 @@
+// hamburger menu
+function toggle() {
+  var navLinks = document.getElementById("menu");
+  navLinks.classList.toggle("active");
+  console.log("toggled menu");
+  }
+
 // home page animation 
 document.addEventListener("DOMContentLoaded", function() {
     const frames = document.querySelectorAll(".frame");

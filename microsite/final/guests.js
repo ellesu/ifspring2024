@@ -1,3 +1,11 @@
+// hamburger menu
+function toggle() {
+  var navLinks = document.getElementById("menu");
+  navLinks.classList.toggle("active");
+  console.log("toggled menu");
+  }
+
+
 // notable guest list
 const guests = [
     { firstName: 'Audrey', lastName: 'Hepburn', occupation: 'Actress', image: './portraits/hepburn.png', era: 1960},
