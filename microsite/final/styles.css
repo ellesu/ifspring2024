@@ -428,6 +428,11 @@ h1{
 }
 
 @media (max-width: 600px) {
+
+  h1 {
+    padding-top:1em;
+  }
+
   .component {
     flex: 1 1 10%;
   }
@@ -448,6 +453,9 @@ h1{
     background-attachment: scroll;
   }
   .guests-cover {
+    background-attachment: scroll;
+  }
+  .facts-cover {
     background-attachment: scroll;
   }
 }
